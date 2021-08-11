@@ -4,56 +4,66 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-        <header>
-            <div>
+        <header className="site-header">
+            <div className="site-logo">
                 <img 
                 src="./images/Logo.png" 
                 srcset="./images/Logo.png 1x, ./images/Logo@2x.png 2x, ./images/Logo@3x.png 3x"
                 alt="logo" />
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
+            <nav className="main-nav">
+                <ul className="main-nav__list">
+                    <li className="main-nav__list-item">
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#">About US</a>
+                        <a href="#about">About US</a>
                     </li>
                     <li>
-                        <a href="#">Products</a>
+                        <a href="#products">Products</a>
                     </li>
                     <li>
-                        <a href="#">Faqs</a>
+                        <a href="#faqs">Faqs</a>
                     </li>
                     <li>
-                        <a href="#">Contact US</a>
+                        <a href="#contact">Contact US</a>
                     </li>
                 </ul>
             </nav>
-            <div>
-                <a href="#">
-                    <img id="icon-search" src="./images/search.svg" />
-                </a>
-                <a href="#">
-                    <img id="icon-cart" src="./images/basket.svg" />
-                </a>
-                <a href="#">
-                    <img id="icon-user" src="./images/person.svg" />
-                </a>
+            <div className="site-widgets">
+                <ul className="site-widgets__list">
+                    <li className="site-widgets__list-item">
+                        <a href="#">
+                            <img id="icon-search" src="./images/search.svg" />
+                        </a>
+                    </li>
+                    <li className="site-widgets__list-item">
+                        <a href="#">
+                            <img id="icon-cart" src="./images/basket.svg" />
+                        </a>
+                    </li>
+                    <li className="site-widgets__list-item">
+                        <a href="#">
+                            <img id="icon-user" src="./images/person.svg" />
+                        </a>
+                    </li>
+                </ul>
             </div>
         </header>
-        <section>
-            <h1>Modern Furniture For Modern Living Style</h1>
+        <section className="hero">
+            <h1 className="hero__heading">Modern Furniture For Modern Living Style</h1>
             <p> In unfeeling existence objection immediate repulsive on he in. Imprudence comparison uncommonly me he difficulty diminution resolution. Likewise proposal differed scarcely dwelling as on raillery.</p>
             <p>September few dependent extremity own continued and ten prevailed attending. Early to weeks we could. Do commanded an shameless we disposing do. Indulgence ten remarkably nor are impression out. Power is lived means oh every in we quiet.</p>
-            <a href="#">Request a Quote</a>
-            <a href="#">Watch a video</a>
+            <div className="hero__cta">
+                <a className="btn btn_primary" href="#quote">Request a Quote</a>
+                <a className="btn btn_primary-outline " href="#video">Watch a video</a>
+            </div>
         </section>
-        <section>
-            <h2>SOME OF OUR TRUSTED CLIENTS</h2>
-            <ul>
-                <li>
-                    <a href="#">
+        <section className="our-clients">
+            <h2 className="our-clients__heading">SOME OF OUR TRUSTED CLIENTS</h2>
+            <ul className="our-clients__list">
+                <li className="our-clients__list-item">
+                    <a href="http://google.com">
                         <img    
                         src="./images/content/google.png"        
                         srcset="./images/content/google.png 1x, 
@@ -62,8 +72,8 @@ function App() {
                         alt="google-logo" />
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li className="our-clients__list-item">
+                    <a href="http://stripe.com">
                         <img    
                         src="./images/content/stripe.png" 
                         srcset="./images/content/stripe.png 1x, 
@@ -72,8 +82,8 @@ function App() {
                         alt="stripe-logo" />
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li className="our-clients__list-item">
+                    <a href="http://deloitte.com">
                         <img    
                         src="./images/content/deloitte.png" 
                         srcset="./images/content/deloitte.png 1x, 
@@ -82,8 +92,8 @@ function App() {
                         alt="deloitte-logo" />
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li className="our-clients__list-item">
+                    <a href="http://accenture.com">
                         <img    
                         src="./images/content/accenture.png" 
                         srcset="./images/content/accenture.png 1x, 
@@ -92,8 +102,8 @@ function App() {
                         alt="accenture-logo" />
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li className="our-clients__list-item">
+                    <a href="http://IBM.com">
                         <img    
                         src="./images/content/IBM.png" 
                         srcset="./images/content/IBM.png 1x, 
@@ -102,8 +112,8 @@ function App() {
                         alt="IBM-logo" />
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li className="our-clients__list-item">
+                    <a href="http://samsung.com">
                         <img    
                         src="./images/content/samsung.png" 
                         srcset="./images/content/samsung.png 1x, 
@@ -114,9 +124,9 @@ function App() {
                 </li>
             </ul>
         </section>
-        <section>
-            <section>
-                <h2>Residential Furniture</h2>
+        <section className="featured-section">
+            <section className="featured-section__item">
+                <h2 className="featured-section__heading">Residential Furniture</h2>
                 <p>Browse Collection</p>
                 <img 
                 src="./images/content/residential furniture.png" 
@@ -125,8 +135,8 @@ function App() {
                         ./images/content/residential furniture@3x.png 3x"
                 alt="residential furniture" />
             </section>
-            <section>
-                <h2>Hospitality Furniture</h2>
+            <section className="featured-section__item">
+                <h2 className="featured-section__heading">Hospitality Furniture</h2>
                 <p>Browse Collection</p>
                 <img 
                 src="./images/content/hospitality furniture.png" 
@@ -136,40 +146,40 @@ function App() {
                 alt="hospitality furniture" />
             </section>
         </section>
-        <section>
-            <div>
-                <h2>Products</h2>
-                <ul>
-                    <li>
-                        <a href="#">Best Selling</a>
+        <section className="products-section">
+            <div className="products-section__header">
+                <h2 className="products-section__heading">Products</h2>
+                <ul className="products-section__tabs">
+                    <li className="products-section__tabs-item">
+                        <a href="#best-selling">Best Selling</a>
                     </li>
-                    <li>
-                        <a href="#">Most popular</a>
+                    <li className="products-section__tabs-item">
+                        <a href="#most-popular">Most popular</a>
                     </li>
                 </ul>
-                <div>
-                    <a href="#">See All <img src="./images/product-section-arrow.svg" /></a>
+                <div className="products-section__tabs-item-all">
+                    <a href="#see-all">See All <img src="./images/product-section-arrow.svg" /></a>
                 </div>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <a href="#">All</a>
+            <div className="products-section__cat-filter">
+                <ul className="products-section__filter-list">
+                    <li className="products-section__filter-list-item">
+                        <a href="#all">All</a>
                     </li>
-                    <li>
-                        <a href="#">Bed</a>
+                    <li className="products-section__filter-list-item">
+                        <a href="#bed">Bed</a>
                     </li>
-                    <li>
-                        <a href="#">Sofa</a>
+                    <li className="products-section__filter-list-item">
+                        <a href="#sofa">Sofa</a>
                     </li>
-                    <li>
-                        <a href="#">Chair</a>
+                    <li className="products-section__filter-list-item">
+                        <a href="#chair">Chair</a>
                     </li>
-                    <li>
-                        <a href="#">Light</a>
+                    <li className="products-section__filter-list-item">
+                        <a href="#light">Light</a>
                     </li>
                 </ul>
-                <div>
+                <div className="products-section__item">
                     <a href="#">Add to cart <img src="./images/basket-white.svg" /></a>
                     <h2>Ramen Stool</h2>
                     <div>
@@ -184,7 +194,7 @@ function App() {
                         </a>
                     </div>
                 </div>
-                <div>
+                <div className="products-section__item">
                     <a href="#">Add to cart <img src="./images/basket-white.svg" /></a>
                     <h2>Ramen Stool</h2>
                     <div>
@@ -200,7 +210,7 @@ function App() {
                         </a>
                     </div>
                 </div>
-                <div>
+                <div className="products-section__item">
                     <a href="#">Add to cart <img src="./images/basket-white.svg" /></a>
                     <h2>Ramen Stool</h2>
                     <div>
@@ -216,7 +226,7 @@ function App() {
                         </a>
                     </div>
                 </div>
-                <div>
+                <div className="products-section__item">
                     <a href="#">Add to cart <img src="./images/basket-white.svg" /></a>
                     <h2>Ramen Stool</h2>
                     <div>
@@ -232,7 +242,7 @@ function App() {
                         </a>
                     </div>
                 </div>
-                <div>
+                <div className="products-section__item">
                     <a href="#">Add to cart <img src="./images/basket-white.svg" /></a>
                     <h2>Ramen Stool</h2>
                     <div>
@@ -248,7 +258,7 @@ function App() {
                         </a>
                     </div>
                 </div>
-                <div>
+                <div className="products-section__item">
                     <a href="#">Add to cart <img src="./images/basket-white.svg" /></a>
                     <h2>Ramen Stool</h2>
                     <div>
@@ -265,7 +275,7 @@ function App() {
                 </div>
             </div>
         </section>
-        <section>
+        <section className="testimonials-section">
             <div>
                 <img src="./images/content/testimonials.png" 
                     srcset="./images/content/testimonials.png 1x, 
@@ -318,7 +328,7 @@ function App() {
                 </ul>
             </div>
         </section>
-        <section>
+        <section  className="newsletter-section">
             <div>Mistrium Interiror</div>
             <h2>Signup to receive updates about new products</h2>
             <div>
@@ -331,46 +341,46 @@ function App() {
             </div>
             <img src="./images/content/newsletter.jpg" srcset="./images/content/newsletter.jpg 1x, ./images/content/newsletter@2x.jpg 2x, ./images/content/newsletter@3x.jpg 3x" alt="newsletter"/>
         </section>
-        <footer>
-            <div>
+        <footer className="site-footerf">
+            <div className="site-logo">
                 <img src="./images/footer-logo.png" srcset="./images/footer-logo.png 1x, ./images/footer-logo@2x.png 2x, ./images/footer-logo@3x.png 3x" alt="footer-logo" />
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">About</a>
+            <nav className="footer-menu">
+                <ul className="footer-menu__list">
+                    <li className="footer-menu__list-item">
+                        <a href="#about">About</a>
                     </li>
-                    <li>
-                        <a href="#">Product</a>
+                    <li className="footer-menu__list-item">
+                        <a href="#product">Product</a>
                     </li>
-                    <li>
-                        <a href="#">Service</a>
+                    <li className="footer-menu__list-item">
+                        <a href="#service">Service</a>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
+                    <li className="footer-menu__list-item">
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
-            <nav>
-                <ul>
-                    <li>
+            <nav className="follow-us">
+                <ul className="follow-us__list">
+                    <li className="follow-us__list-item">
                         <a href="#">
                             <img src="./images/facebook.svg" alt="facebook" />
                         </a>
                     </li>
-                    <li>
+                    <li className="follow-us__list-item">
                         <a href="#">
                             <img src="./images/instagram.svg" alt="instagram" />
                         </a>
                     </li>
-                    <li>
+                    <li className="follow-us__list-item">
                         <a href="#">
                             <img src="./images/youtube.svg" alt="youtube" />
                         </a>
                     </li>
                 </ul>
             </nav>
-            <div>Copyright &copy; 2021. Furniture LP</div>
+            <div className="copyright">Copyright &copy; 2021. Furniture LP</div>
         </footer>
     </div>
   );
