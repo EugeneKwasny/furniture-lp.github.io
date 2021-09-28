@@ -5,10 +5,12 @@ function App() {
     <div className="App">
         <header className="site-header">
             <div className="site-logo">
-                <img 
-                src="./images/Logo.png" 
-                srcset="./images/Logo.png 1x, ./images/Logo@2x.png 2x, ./images/Logo@3x.png 3x"
-                alt="logo" />
+                <a href="#">
+                    <img 
+                    src="./images/Logo.png" 
+                    srcset="./images/Logo.png 1x, ./images/Logo@2x.png 2x, ./images/Logo@3x.png 3x"
+                    alt="logo" />
+                </a>
             </div>
             <nav className="main-nav">
                 <ul className="main-nav__list">
