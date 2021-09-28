@@ -6,13 +6,26 @@
     justify-content: space-between;
     margin-top: 58px;
    .site-logo{
-       width: 156px;
-       img{
-           flex-shrink: 0;
+       
+       display: flex;
+       a{
+           display: flex;
+           align-items: center;
+        img{
+            width: 156px;
+            height: 35px;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
        }
+
    }
   .main-nav{
+        display: flex;
+        align-items: center;
       &__list {
+            padding: 0;
+            margin: 0;
           display: flex;
           list-style: none;
           &-item{
