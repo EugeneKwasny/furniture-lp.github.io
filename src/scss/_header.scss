@@ -7,7 +7,9 @@
     margin-top: 58px;
    .site-logo{
        width: 156px;
-       img{}
+       img{
+           flex-shrink: 0;
+       }
    }
   .main-nav{
       &__list {
