@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -16,16 +15,16 @@ function App() {
                     <li className="main-nav__list-item">
                         <a href="#home">Home</a>
                     </li>
-                    <li>
+                    <li className="main-nav__list-item">
                         <a href="#about">About US</a>
                     </li>
-                    <li>
+                    <li className="main-nav__list-item">
                         <a href="#products">Products</a>
                     </li>
-                    <li>
+                    <li className="main-nav__list-item">
                         <a href="#faqs">Faqs</a>
                     </li>
-                    <li>
+                    <li className="main-nav__list-item">
                         <a href="#contact">Contact US</a>
                     </li>
                 </ul>
