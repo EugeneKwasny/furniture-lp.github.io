@@ -1,0 +1,55 @@
+.site-header {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 58px;
+   .site-logo{
+       width: 156px;
+       img{}
+   }
+  .main-nav{
+      &__list {
+          display: flex;
+          list-style: none;
+          &-item{
+              a{
+                font-family: Geomanist, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 17px;
+                color: #000000;
+                padding-bottom: 12px;
+                padding-left: 2px;
+                padding-right: 2px;
+                text-decoration: none;
+    
+                &:hover {
+                    border-bottom: 2px solid #000;
+                }
+              }
+              & + li {
+                  margin-left: 50px;
+              } 
+          }
+      }
+  }
+   
+    .site-widgets {
+        &__list{
+            list-style: none;
+            display: flex;
+            &-item{
+                a {
+                    img{}
+                }
+
+                & + li{
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}
